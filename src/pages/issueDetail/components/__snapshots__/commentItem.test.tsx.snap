@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CommentItem /> tests test CommentItem snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bczRLJ jbcHnV"
+  >
+    <div
+      class="content"
+    >
+      <p>
+        test comment
+      </p>
+    </div>
+    <div
+      class="sub-text"
+    >
+      Commented a few seconds ago by lutif
+    </div>
+  </div>
+</DocumentFragment>
+`;

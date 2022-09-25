@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IssueListItem /> tests test issueListItem snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bczRLJ eyycDj"
+  >
+    <div
+      class="title"
+    >
+      test
+    </div>
+    <div
+      class="details"
+    >
+      #2 Opened a few seconds ago by test
+    </div>
+    <div>
+      1 comments | OPEN 
+    </div>
+  </div>
+</DocumentFragment>
+`;

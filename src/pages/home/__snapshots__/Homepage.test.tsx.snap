@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage test test HomePage snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bczRLJ gncVuK"
+  >
+    <div
+      class="repo"
+    >
+      go to reactjs.org of reactjs
+    </div>
+    <div
+      class="repo"
+    >
+      go to material-ui of mui-org
+    </div>
+    <div
+      class="repo"
+    >
+      go to nuka-carousel of FormidableLabs
+    </div>
+  </div>
+</DocumentFragment>
+`;
