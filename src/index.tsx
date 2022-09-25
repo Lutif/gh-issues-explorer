@@ -11,7 +11,7 @@ const container = document.getElementById("root")!;
 const root = createRoot(container);
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <React.StrictMode>
       <ErrorBoundary>
         <ApolloProvider client={client}>

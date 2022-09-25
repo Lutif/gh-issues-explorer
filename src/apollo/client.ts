@@ -5,13 +5,12 @@ import {
   InMemoryCache,
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
+import { REACT_APP_GITHUB_BASE_URL } from "../utils/constants";
 
 const httpLink = new HttpLink({
-  uri: process.env.REACT_APP_GITHUB_BASE_URL,
+  uri: REACT_APP_GITHUB_BASE_URL,
   headers: {
-    authorization: `Bearer ${
-      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN //token for private access
-    }`,
+    authorization: `Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}`,
   },
 });
 
