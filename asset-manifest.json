@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/gh-issues-explorer/static/js/main.529235d0.js",
+    "static/js/520.9f0795fb.chunk.js": "/gh-issues-explorer/static/js/520.9f0795fb.chunk.js",
+    "static/js/750.d3da523a.chunk.js": "/gh-issues-explorer/static/js/750.d3da523a.chunk.js",
+    "static/js/716.caec56f3.chunk.js": "/gh-issues-explorer/static/js/716.caec56f3.chunk.js",
+    "static/js/787.ab25ccba.chunk.js": "/gh-issues-explorer/static/js/787.ab25ccba.chunk.js",
+    "static/js/751.22e97991.chunk.js": "/gh-issues-explorer/static/js/751.22e97991.chunk.js",
+    "static/js/452.bc749849.chunk.js": "/gh-issues-explorer/static/js/452.bc749849.chunk.js",
+    "index.html": "/gh-issues-explorer/index.html",
+    "main.529235d0.js.map": "/gh-issues-explorer/static/js/main.529235d0.js.map",
+    "520.9f0795fb.chunk.js.map": "/gh-issues-explorer/static/js/520.9f0795fb.chunk.js.map",
+    "750.d3da523a.chunk.js.map": "/gh-issues-explorer/static/js/750.d3da523a.chunk.js.map",
+    "716.caec56f3.chunk.js.map": "/gh-issues-explorer/static/js/716.caec56f3.chunk.js.map",
+    "787.ab25ccba.chunk.js.map": "/gh-issues-explorer/static/js/787.ab25ccba.chunk.js.map",
+    "751.22e97991.chunk.js.map": "/gh-issues-explorer/static/js/751.22e97991.chunk.js.map",
+    "452.bc749849.chunk.js.map": "/gh-issues-explorer/static/js/452.bc749849.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.529235d0.js"
+  ]
+}
