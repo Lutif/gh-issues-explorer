@@ -16,7 +16,7 @@ export const IssueListItem: React.FC<IssueListItemProps> = ({ issue }) => {
     author,
     comments: { totalCount: totalComments } = {},
   } = issue;
-  const login = author || {};
+  const { login } = author || {};
   const history = useHistory();
   const { pathname } = useLocation();
 
