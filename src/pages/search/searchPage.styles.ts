@@ -36,6 +36,10 @@ export const SearchPageStyled = styled.div`
     button {
       margin: 0px 5px;
       height: 30px;
+      text-transform: none;
+      &:disabled {
+        background-color: #e5e5e5;
+      }
     }
     .page {
       height: 50px;

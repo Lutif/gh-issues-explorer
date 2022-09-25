@@ -9,6 +9,9 @@
 
 ## tests
 1- genrate mock objects `issueListItem.test`
+
 2 - snapshot tests `Homepage.test`
+
 3 - event listener test, test something shouldn't happen `searchbar.tests`
+
 4- gql mock test `IssueDetails.test`

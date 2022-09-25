@@ -51,7 +51,6 @@ export const useSearchIssues = (): userSearchIssueResponse => {
     useLazyQuery<SearchIssuesData>(SEARCH_FOR_ISSUE, {
       onCompleted: (data) => {
         const newItems = data.search.nodes;
-        // newItems.reverse();
         newItems.length && incrementPageNumber();
         const newArr = [...searchResult, ...newItems];
         setSearchResult(newArr);
@@ -65,7 +64,7 @@ export const useSearchIssues = (): userSearchIssueResponse => {
 
   const {
     error: intialLoadError,
-    loading: firstLoad,
+    loading,
     refetch,
   } = useQuery<GetIssuesData>(GET_ISSUES_OF_REPOSITORY, {
     variables: {
@@ -122,6 +121,7 @@ export const useSearchIssues = (): userSearchIssueResponse => {
 
   const gotoNextPage = useCallback(
     (isOpen: boolean) => {
+      if ((isSearchActive && searching) || (loading && !isSearchActive)) return;
       if (searchText) {
         const nextPageDataExist = searchResult.length > currentPage * PAGE_SIZE;
         nextPageDataExist
@@ -138,11 +138,14 @@ export const useSearchIssues = (): userSearchIssueResponse => {
       currentPage,
       getNextPageForSearch,
       incrementPageNumber,
+      isSearchActive,
+      loading,
       nextPage,
       refetch,
       result.length,
       searchResult.length,
       searchText,
+      searching,
     ]
   );
 
@@ -151,7 +154,7 @@ export const useSearchIssues = (): userSearchIssueResponse => {
   }, [searchText]);
 
   const isError = !!(searchError || intialLoadError);
-  const isLoading = firstLoad || searching;
+  const isLoading = loading || searching;
 
   const startIndex = ((currentPage || 1) - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;

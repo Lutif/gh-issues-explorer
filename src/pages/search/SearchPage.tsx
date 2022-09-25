@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import React, { useState } from "react";
 import { IssueListItem } from "./components/IssueListItem";
 import { SearchBar } from "./components/Searchbar";
-import { useSearchIssues } from "../../utils";
+import { PAGE_SIZE, useSearchIssues } from "../../utils";
 import { ShouldRender, Loading } from "../shared";
 import Checkbox from "@mui/material/Checkbox";
 import { SearchPageStyled } from "./searchPage.styles";
@@ -88,7 +88,7 @@ export const SearchPage: React.FC<SearchPageProps> = () => {
             variant="outlined"
             color="info"
             size="small"
-            disabled={!hasMore || isLoading}
+            disabled={(!hasMore && issues.length < PAGE_SIZE) || isLoading}
             onClick={() => gotoNextPage(open)}
           >
             Next page

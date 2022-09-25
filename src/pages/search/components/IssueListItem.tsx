@@ -1,5 +1,5 @@
 import React from "react";
-import { Issue, IssueState } from "../../../utils";
+import { Issue } from "../../../utils";
 import moment from "moment";
 import { useHistory, useLocation } from "react-router-dom";
 import { IssueListItemWrapper } from "./issueListItem.styled";
@@ -13,9 +13,10 @@ export const IssueListItem: React.FC<IssueListItemProps> = ({ issue }) => {
     title,
     state,
     createdAt,
-    author: { login } = {},
+    author,
     comments: { totalCount: totalComments } = {},
   } = issue;
+  const login = author || {};
   const history = useHistory();
   const { pathname } = useLocation();
 
