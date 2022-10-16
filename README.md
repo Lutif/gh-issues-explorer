@@ -12,3 +12,4 @@
 - snapshot tests `Homepage.test`
 - event listener test, test something shouldn't happen `searchbar.tests`
 - gql mock test `IssueDetails.test`
+
