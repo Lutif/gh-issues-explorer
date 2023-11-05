@@ -5,7 +5,7 @@
 - 3- install npm modules, `yarn` or `npm i`
 - 4- run with `yarn start` or `npm start`
 
-
+check [demo](lutif.github.io/gh-issues-explorer/)
 
 ## tests
 - genrate mock objects `issueListItem.test`
